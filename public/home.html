@@ -1,0 +1,278 @@
+<html>
+<head>
+  <title>StyleLo</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/mdb.min.css">
+  <link rel="stylesheet" href="/stylesheets/compiled.min.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/curtain.css">
+  <link rel="stylesheet" href="/javascripts/slides/style.css">
+  <link rel="stylesheet" href="https://epochjs.github.io/epoch/css/epoch.css">
+</head>
+<body class="container-fluid" style="margin:0;padding:0">
+  <!-- <div class="background" style="position:absolute;width:100%;height:100%">
+  <video width="100%" autoplay loop id="bgVideo" onload="playVid();"><source src="/images/bg.mp4" type="video/mp4">
+</video>
+</div> -->
+<div class="main" id="page1" style="z-index: 100;position:fixed;width:100%;height:100%;background-image:url('images/cover.png');">
+  <button onclick="start()"  style="position:absolute;border-radius:15px;bottom:0px;right:50%">Start</button>
+  <heading style="position:absolute;top:10rem;left:10rem">
+    <span class="animHead">S</span>
+    <span class="animHead">T</span>
+    <span class="animHead">Y</span>
+    <span class="animHead">L</span>
+    <span class="animHead">E</span>
+    <span class="animHead">L</span>
+    <span class="animHead">O</span>
+    <br><br><br>
+    <span class="animHead small">Y</span>
+    <span class="animHead small">o</span>
+    <span class="animHead small">u</span>
+    <span class="animHead small">r</span>
+    <span class="animHead small">&nbsp;</span>
+    <span class="animHead small">O</span>
+    <span class="animHead small">w</span>
+    <span class="animHead small">n</span>
+    <span class="animHead small">&nbsp;</span>
+    <span class="animHead small">S</span>
+    <span class="animHead small">h</span>
+    <span class="animHead small">o</span>
+    <span class="animHead small">p</span>
+  </heading>
+  <div class="coverImages"></div>
+</div>
+<div id="page2" style="z-index: 50;position:absolute;position:fixed;width:100%;height:100%;background-image:url('images/coverplain.jpg');">
+  <div class="row" style="height:100%">
+    <div class="col text-center"  >
+      <div id="strip1" class="strip" style="box-shadow:black 4px 5px 20px 7px;height:0;background-image:url('images/yellow.jpg');background-size:cover;margin:0 10rem 0 10rem;padding-top:10rem">
+
+      </div>
+      <img id="stripFemale" src="images/female.png" alt="" style="z-index:100;height:20rem;display:none;position:absolute;left:27%;top:10rem" onclick="selectFemale()">
+    </div>
+    <div class="col text-center"  >
+      <div id="strip2" class="strip" style="box-shadow:black 4px 5px 20px 7px;height:0;background-image:url('images/yellow.jpg');background-size:cover;margin:0 10rem 0 10rem;padding-top:10rem">
+
+      </div>
+      <img id="stripMale" src="images/male.png" alt="" style="z-index:100;height:20rem;display:none;position:absolute;right:27%;top:10rem">
+    </div>
+    <div class="floor" style="position: fixed;width:100%;height:100%;z-index:60;background-image:url('images/disco.png');background-size: cover;display:none">
+      <video width="100%" autoplay="" loop="" id="bgVideo" onload="playVid();" style="height: 30rem;z-index:80;position: absolute;top: 0rem;/* width: 100%; */"><source src="/images/bg.mp4" type="video/mp4">
+      </video>
+      <!-- <img src="images/lights.gif" alt="" style="z-index: 80;position: absolute;height: 10rem;left: 45%;"> -->
+    </div>
+
+    <!-- <div class="col text-center" id="strip2" style="height:0;background-image:url('images/yellow.jpg');background-size:cover;padding-top:10rem;margin:0 10rem 0 10rem"> <img src="images/male.png" alt="" style="height:20rem"></div> -->
+  </div>
+
+  <button onclick="mergeStrips()"  style="position:absolute;border-radius:15px;bottom:0px;right:50%">Merge</button>
+</div>
+<div id="page3" style="display:none;background:black;color:#323232;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;">
+  <div class="sections" style="position:relative;margin-left:54px;margin-right:10px;overflow:hidden">
+    <section id="home_" class="post-5 page type-page status-publish hentry home tpl-home active" style="position:relative;height: 35rem;">
+      <article style="display:block;position:absolute;top:-3rem;left:0;right:0;bottom:0">
+        <div class="bgc" style="position:absolute;top:0;left:0;right:0;bottom:-200px">
+          <div style="background-color: rgb(229, 200, 183); opacity: 0.0591;">
+          </div>
+        </div>
+
+        <header style="top: 0px;z-index:0">
+          <div class="dbg" style="position:absolute;bottom: 0;left:50%;width:100%;margin-left:-50%;transform-origin:center bottom;transform: skew(0, -8deg);background-color: #000;height:1000px"></div>
+          <h1 style="    transform: skew(0, -8deg);width:20rem;background: transparent url(images/stylo.svg) center 0 no-repeat;margin-left: -140px;color: transparent;font: 0/0 a;text-shadow: none;height:6rem;position:absolute;left:50%;bottom:0">Fluttuo Jewels Shop</h1>
+          <div class="links" style="position: absolute;width: 454px;bottom: 17px;left: 50%;margin-left: -238px;transform-origin: center bottom;transform: skew(0, -8deg);">
+            <a href="#manifesto"><span>Jewels</span></a>
+            <a href="http://fluttuo.bigcartel.com"><span>Shop</span></a>
+          </div>
+        </header>
+        <div class="hbg">
+          <div class="dsk">
+            <img width="700" height="141" src="images/Fluttuo_Made-Once-Only_TagLine_Big1.png" class="attachment-full" alt="Fluttuo_Made-Once-Only_TagLine_Big">
+          </div>
+
+        </div>
+        <div class="slider" style="overflow:hidden;background: rgb(189, 194, 206);bottom: -6rem; opacity: 1;  position: absolute;width: 107%;left:-4%;border-bottom:1rem solid black;top:150px;   transform: skew(0, -8deg);">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" style="">
+              <div class="carousel-item active text-center" style="padding:60px 0 0;text-align:center;position:relative;box-sizing:border-box">
+                <span class="text-center" style="margin-left: -15%;position: relative;display: block;height: 100%;width:50rem;    left: 50%;">
+                  <img class="d-block w-100 text-center" src="images/Fluttuo_Made-Once-Only_Traugott-Collection-011.png" alt="First slide" style=" transform: skew(0, 8deg);transform-origin: center bottom;display: inline-block;height: 100% !important;width: auto !important;">
+                </span>
+              </div>
+              <div class="carousel-item  text-center" style="padding:60px 0 0;text-align:center;position:relative;box-sizing:border-box">
+                <span class="text-center" style="margin-left: -15%;position: relative;display: block;height: 100%;width:50rem;    left: 50%;">
+                  <img class="d-block w-100 text-center" src="images/Fluttuo_Made-Once-Only_Traugott-Collection-03.png" alt="First slide" style=" transform: skew(0, 8deg);transform-origin: center bottom;display: inline-block;height: 100% !important;width: auto !important;">
+                </span>
+              </div>
+              <div class="carousel-item  text-center" style="padding:60px 0 0;text-align:center;position:relative;box-sizing:border-box">
+                <span class="text-center" style="margin-left: -15%;position: relative;display: block;height: 100%;width:50rem;    left: 50%;">
+                  <img class="d-block w-100 text-center" src="images/Fluttuo_Made-Once-Only_Traugott-Collection-041.png" alt="First slide" style=" transform: skew(0, 8deg);transform-origin: center bottom;display: inline-block;height: 100% !important;width: auto !important;">
+                </span>
+              </div>
+              <div class="carousel-item  text-center" style="padding:60px 0 0;text-align:center;position:relative;box-sizing:border-box">
+                <span class="text-center" style="margin-left: -15%;position: relative;display: block;height: 100%;width:50rem;    left: 50%;">
+                  <img class="d-block w-100 text-center" src="images/Fluttuo_Made-Once-Only_Traugott-Collection-021.png" alt="First slide" style=" transform: skew(0, 8deg);transform-origin: center bottom;display: inline-block;height: 100% !important;width: auto !important;">
+                </span>
+              </div>
+              <div class="carousel-item  text-center" style="padding:60px 0 0;text-align:center;position:relative;box-sizing:border-box">
+                <span class="text-center" style="margin-left: -15%;position: relative;display: block;height: 100%;width:50rem;    left: 50%;">
+                  <img class="d-block w-100 text-center" src="images/Fluttuo_Made-Once-Only_Traugott-Collection-061.png" alt="First slide" style=" transform: skew(0, 8deg);transform-origin: center bottom;display: inline-block;height: 100% !important;width: auto !important;">
+                </span>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <br><br>
+    <div style="z-index: 1000;position: relative;background:transparent;height: 6rem;width: 100%;bottom: -2rem;transform: skew(0, -8deg);background: black;">
+      <div class="emojiSentiment text-center" style="background: red;position: relative;padding:  0.5rem;width: 10rem;top: -7rem;">
+        <img src="/images/emojis/smile.png" alt="" style="height: 5rem;transform: skew(0, 8deg);"  id="emojiFace">
+      </div>
+      <div id="myChart" style="z-index: 1003;width: 30rem;height: 13rem;float: right;background: white;top: -6rem;"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="javascripts/jquery-3.2.1.min.js"></script>
+<script src="javascripts/mdb.min.js"></script>
+<script src="javascripts/tether.min.js"></script>
+<script src="javascripts/compiled.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script src="https://epochjs.github.io/epoch/js/epoch.js"></script>
+<script src="javascripts/data.js"></script>
+<script src="javascripts/socket.io-1.4.5.js"></script>
+
+
+<!-- <script src="javascripts/socket.io-1.4.5.js"></script> -->
+<script>
+var socket = io();
+var websocket = new WebSocket("wss://10.201.92.246:2100");
+
+websocket.onclose = function (error,m) {
+    console.log(m)
+}
+websocket.onopen = function (error,m) {
+    websocket.send("web");
+}
+var vid = document.getElementById("bgVideo");
+function playVid() {
+  vid.play();
+}
+
+function start(){
+  var content='<div><img src="images/jump1.png" alt="" style="height:20rem" class="jump" ></div>';
+  // $(".coverImages").html(content);
+  var letters=document.getElementsByClassName("animHead");
+  console.log(letters);
+  var i=0;
+  // item.attribute("display","block");
+  var x=setInterval(function(){
+    if(i<letters.length)
+    letters[i++].style.visibility="visible";
+    else{
+      $("#page1").addClass("zoomOutHide");
+      $("#page2").addClass("zoominShow");
+      $("#strip1, #strip2").animate({height: "800px"},5000);
+      // $("#strip1, #strip2").fadeIn(5000);
+      $("#stripFemale, #stripMale").fadeIn(10000);
+      $("#stripFemale, #stripMale").addClass("animateCategories");
+
+    }
+  },30);
+
+
+
+
+}
+
+
+function jump(){
+  $(".jump").addClass("jumping");
+}
+function mergeStrips(){
+  $("#strip1, #strip2").fadeOut(3000);
+  $("#strip1, #strip2").css("display","none");
+
+  $(".floor").css("display","block");
+  var vid = document.getElementById("bgVideo");
+  vid.play();
+
+}
+
+function selectFemale(){
+  $("#page2").css("display","none");
+  $("#page3").css("display","block");
+}
+
+var i=0;
+
+var step = Math.PI /2,
+data = time().add(function(x) { return Math.floor(Math.random() * 10) - 5; }),
+interval = null;
+
+var  myChart = $('#myChart').epoch({
+  type: 'time.line',
+  data: data.get([0, 2*Math.PI], step),
+  range:[-10,10],
+  axes: ['left', 'bottom','right']
+});
+
+socket.on("vSentiment",function(msg){
+  console.log(msg);
+  var curTime=new Date();
+  var newData=[{time:curTime.getTime(),y:parseFloat(msg.sentiment)*10}];
+  console.log(newData);
+  console.log(parseInt(msg.sentiment));
+  myChart.push(newData);
+  websocket.send("web");
+})
+
+
+socket.on("fSentiment",function(msg){
+  console.log(msg);
+
+  switch (msg){
+      case "ANGRY":
+	      $("#emojiFace").attr("src","/images/emojis/angry.png");
+		  break;
+      case "HAPPY":
+	      $("#emojiFace").attr("src","/images/emojis/happy.png");
+		  break;
+      case "SURPRISED":
+	      $("#emojiFace").attr("src","/images/emojis/surprised.png");
+		  break;
+      case "SAD":
+	      $("#emojiFace").attr("src","/images/emojis/sad.png");
+		  break;
+      case "CALM":
+	      $("#emojiFace").attr("src","/images/emojis/calm.png");
+		  break;
+      case "CONFUSED":
+	      $("#emojiFace").attr("src","/images/emojis/confused.png");
+		  break;
+      default:
+              $("#emojiFace").attr("src","/images/emojis/confused.png");
+
+		  }
+
+  var curTime=new Date();
+  var newData=[{time:curTime.getTime(),y:parseFloat(msg.sentiment)*10}];
+  console.log(newData);
+  console.log(parseInt(msg.sentiment));
+  myChart.push(newData);
+  websocket.send("web");
+})
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/mdb.min.css">
+  <link rel="stylesheet" href="/stylesheets/compiled.min.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <style>
+  .card,.card-block{
+    text-align:left;
+    padding-left:2rem;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card text-center" style="padding:2rem;margin:2rem">
+          <div class="card-block text-center">
+            <a href="https://nameless-gorge-14371.herokuapp.com/ip" class="btn btn-primary">Change the IP</a>
+            <img src="/images/emojis/smile.png" alt="" style="height: 10rem;width:10rem"  id="emojiFace">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="javascripts/jquery-3.2.1.min.js"></script>
+  <script src="javascripts/mdb.min.js"></script>
+  <script src="javascripts/tether.min.js"></script>
+  <script src="javascripts/compiled.min.js"></script>
+  <script src="javascripts/socket.io-1.4.5.js"></script>
+  <script>
+  var socket = io();
+
+  socket.on("fSentiment",function(msg){
+    console.log(msg);
+
+    switch (msg.toUpperCase()){
+      case "ANGRY":
+      $("#emojiFace").attr("src","/images/emojis/angry.png");
+      break;
+      case "HAPPY":
+      $("#emojiFace").attr("src","/images/emojis/happy.png");
+      break;
+      case "SURPRISED":
+      $("#emojiFace").attr("src","/images/emojis/surprised.png");
+      break;
+      case "SAD":
+      $("#emojiFace").attr("src","/images/emojis/sad.png");
+      break;
+      case "CALM":
+      $("#emojiFace").attr("src","/images/emojis/calm.png");
+      break;
+      case "CONFUSED":
+      $("#emojiFace").attr("src","/images/emojis/confused.png");
+      break;
+      default:
+      $("#emojiFace").attr("src","/images/emojis/confused.png");
+
+    }
+  })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    overflow-x:hidden!important;
+    margin-right:0;
+}
+
+a {
+  color: #00B7FF;
+}
+#chart{
+  padding: 20px;
+
+}
+.testimonial-card .avatar {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 120px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+.testimonial-card .card-up {
+    overflow: hidden;
+    height: 3rem;
+    -webkit-border-top-left-radius: .25rem;
+    border-top-left-radius: .25rem;
+    -webkit-border-top-right-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.carousel-thumbnails .carousel-indicators {
+    margin-bottom: -4.69rem;
+    position: absolute;
+}
+.carousel-indicators li {
+  margin:2rem;
+}
+
+.amChartsLegend, .amcharts-legend-div{
+padding:0;
+}
+.showselected{
+  opacity: 0.5;
+}

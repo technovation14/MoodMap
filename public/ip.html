@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+
+<script src="javascripts/jquery-3.2.1.min.js"></script>
+<script>
+function myFunction() {
+    var ip = prompt("Please enter the IP address", "10.201.92.246");
+    if (ip != null) {
+         $.get("/changeIP?ip="+ip,function(res){
+            console.log(res);
+            document.getElementById("demo").innerHTML = ip + " saved";
+  })
+        
+    }
+
+}
+myFunction();
+</script>
+
+</body>
+</html>
